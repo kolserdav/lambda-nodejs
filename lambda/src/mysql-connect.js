@@ -1,9 +1,8 @@
 function connect(callback) {
 
     let mysql = require('mysql'),
-        fs = require('fs'),
-        data = require('./read-file');
-    con = mysql.createConnection({
+        data = require('./read-file'),
+        con = mysql.createConnection({
         host: data.host,
         user: data.user,
         password: data.password,
